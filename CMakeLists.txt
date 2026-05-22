@@ -13,3 +13,17 @@ target_link_libraries(icmp_client tunnel)
 
 add_executable(icmp_server src/server_main.cpp)
 target_link_libraries(icmp_server tunnel)
+
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/releases/download/v1.17.0/googletest-1.17.0.tar.gz
+)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+add_executable(tests tests/tests.cpp)
+target_link_libraries(tests tunnel gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(tests)
