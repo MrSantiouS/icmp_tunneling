@@ -1,0 +1,16 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,55,173"/>
+<area shape="rect" id="Node000002" href="$classtunnel_1_1IcmpUtils.html#a40b32242af6c4ca4a932f5e34f2054fa" title="Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071)." alt="" coords="107,5,248,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,145,61,103,79,79,101,58,109,54,106,59,104,62,83,83,65,106,41,147"/>
+<area shape="rect" id="Node000003" href="$classtunnel_1_1IcmpUtils.html#ac00cd148fd142f7aa5c1b653655901a5" title="Выполняет shell&#45;команду в операционной системе и перехватывает её стандартный вывод (stdout)." alt="" coords="112,72,243,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="53,147,102,124,116,120,112,123,104,129,57,151"/>
+<area shape="rect" id="Node000004" href="$classtunnel_1_1IcmpUtils.html#a7146c90018518d7408fb00c924a836a0" title="Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст." alt="" coords="113,139,242,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,158,100,158,96,162,56,162"/>
+<area shape="rect" id="Node000006" href="$classtunnel_1_1IcmpUtils.html#a8b3bcf908b523aa0c527f84ed89b0596" title="Проверяет размер полезной нагрузки на превышение безопасного лимита." alt="" coords="103,205,252,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="55,169,104,191,116,198,111,199,102,196,55,174"/>
+<area shape="rect" id="Node000007" href="$classtunnel_1_1IcmpUtils.html#afea9c101e3617065d96ba9c8869446f9" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="113,272,242,315"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="39,171,65,214,83,237,104,258,110,264,105,263,101,262,79,241,61,217,38,176"/>
+<area shape="rect" id="Node000005" href="$classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="300,205,428,248"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,179,291,199,286,200,239,184"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="238,269,286,254,291,253,240,274"/>
+</map>

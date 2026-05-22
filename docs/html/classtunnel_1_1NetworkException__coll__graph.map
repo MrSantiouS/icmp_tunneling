@@ -1,0 +1,5 @@
+<map id="tunnel::NetworkException" name="tunnel::NetworkException">
+<area shape="rect" id="Node000001" title="Класс исключения, выбрасываемого при критических ошибках работы с сетью или файлами." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,46,93,81,89,79,89,50"/>
+</map>

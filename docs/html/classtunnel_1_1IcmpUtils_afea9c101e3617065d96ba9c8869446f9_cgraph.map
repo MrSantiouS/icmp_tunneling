@@ -1,0 +1,5 @@
+<map id="tunnel::IcmpUtils::wrap_payload" name="tunnel::IcmpUtils::wrap_payload">
+<area shape="rect" id="Node000001" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="5,5,134,48"/>
+<area shape="rect" id="Node000002" href="$classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="182,5,310,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,24,169,26,163,27,134,29"/>
+</map>

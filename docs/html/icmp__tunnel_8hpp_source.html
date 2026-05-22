@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICMP Tunnelling: Исходный файл /home/user/icmp_tunneling/include/icmp_tunnel.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICMP Tunnelling<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверное приложение для скрытой передачи команд посредством ICMP пакетов</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('icmp__tunnel_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">icmp_tunnel.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="icmp__tunnel_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacetunnel.html">   13</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetunnel.html">tunnel</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classtunnel_1_1NetworkException.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="classtunnel_1_1NetworkException.html#ab00de927b586b7e4a92282f4d58d0438">NetworkException</a> : <span class="keyword">public</span> std::runtime_error {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classtunnel_1_1NetworkException.html#ab00de927b586b7e4a92282f4d58d0438">NetworkException</a>(<span class="keyword">const</span> std::string&amp; message);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classtunnel_1_1IcmpUtils.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classtunnel_1_1IcmpUtils.html">IcmpUtils</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classtunnel_1_1IcmpUtils.html#a86334c0c7c923e4282405cf2404d001f">   42</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_variable" href="classtunnel_1_1IcmpUtils.html#a86334c0c7c923e4282405cf2404d001f">MAGIC_REQ</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classtunnel_1_1IcmpUtils.html#a3b6872492d214089214276d221a5958c">   49</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_variable" href="classtunnel_1_1IcmpUtils.html#a3b6872492d214089214276d221a5958c">MAGIC_RES</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classtunnel_1_1IcmpUtils.html#a986ac9ecac9ce5e1856cef76265e2da8">   54</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_variable" href="classtunnel_1_1IcmpUtils.html#a986ac9ecac9ce5e1856cef76265e2da8">CRYPTO_KEY</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> uint16_t <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a40b32242af6c4ca4a932f5e34f2054fa">calculate_checksum</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; data);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c">xor_cipher</a>(std::vector&lt;uint8_t&gt;&amp; data, <span class="keyword">const</span> std::string&amp; key);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">static</span> std::vector&lt;uint8_t&gt; <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#afea9c101e3617065d96ba9c8869446f9">wrap_payload</a>(<span class="keyword">const</span> std::string&amp; payload, <span class="keyword">const</span> std::string&amp; magic);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a8b3bcf908b523aa0c527f84ed89b0596">validate_payload_size</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a7146c90018518d7408fb00c924a836a0">extract_payload</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; raw_data,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                                       <span class="keyword">const</span> std::string&amp; magic);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a5412a189593194b9576fd0c142a80c7a">is_valid_ipv4</a>(<span class="keyword">const</span> std::string&amp; ip);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#ac00cd148fd142f7aa5c1b653655901a5">execute_command</a>(<span class="keyword">const</span> std::string&amp; command);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classtunnel_1_1IcmpUtils.html#a9b7d9ce3546bcc3e88267c2a82578a9b">read_from_file</a>(<span class="keyword">const</span> std::string&amp; filepath);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html">tunnel::IcmpUtils</a></div><div class="ttdoc">Статический класс-утилита для работы с сырыми ICMP пакетами и системными вызовами.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.hpp:36</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a3b6872492d214089214276d221a5958c"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a3b6872492d214089214276d221a5958c">tunnel::IcmpUtils::MAGIC_RES</a></div><div class="ttdeci">static const std::string MAGIC_RES</div><div class="ttdoc">Магическая сигнатура для идентификации пакета-ответа (от сервера к клиенту). Значение по умолчанию: &quot;...</div><div class="ttdef"><b>Определения</b> icmp_tunnel.hpp:49</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a40b32242af6c4ca4a932f5e34f2054fa"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a40b32242af6c4ca4a932f5e34f2054fa">tunnel::IcmpUtils::calculate_checksum</a></div><div class="ttdeci">static uint16_t calculate_checksum(const std::vector&lt; uint8_t &gt; &amp;data)</div><div class="ttdoc">Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071).</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:18</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a5412a189593194b9576fd0c142a80c7a"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a5412a189593194b9576fd0c142a80c7a">tunnel::IcmpUtils::is_valid_ipv4</a></div><div class="ttdeci">static bool is_valid_ipv4(const std::string &amp;ip)</div><div class="ttdoc">Проверяет строку на соответствие формату IPv4-адреса.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:76</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a7146c90018518d7408fb00c924a836a0"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a7146c90018518d7408fb00c924a836a0">tunnel::IcmpUtils::extract_payload</a></div><div class="ttdeci">static std::string extract_payload(const std::vector&lt; uint8_t &gt; &amp;raw_data, const std::string &amp;magic)</div><div class="ttdoc">Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:63</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a808bf157986426c5a30e613adfe46c5c"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c">tunnel::IcmpUtils::xor_cipher</a></div><div class="ttdeci">static void xor_cipher(std::vector&lt; uint8_t &gt; &amp;data, const std::string &amp;key)</div><div class="ttdoc">Применяет симметричное потоковое шифрование (XOR) к данным.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:38</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a86334c0c7c923e4282405cf2404d001f"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a86334c0c7c923e4282405cf2404d001f">tunnel::IcmpUtils::MAGIC_REQ</a></div><div class="ttdeci">static const std::string MAGIC_REQ</div><div class="ttdoc">Магическая сигнатура для идентификации пакета-запроса (от клиента к серверу). Значение по умолчанию: ...</div><div class="ttdef"><b>Определения</b> icmp_tunnel.hpp:42</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a8b3bcf908b523aa0c527f84ed89b0596"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a8b3bcf908b523aa0c527f84ed89b0596">tunnel::IcmpUtils::validate_payload_size</a></div><div class="ttdeci">static void validate_payload_size(size_t size)</div><div class="ttdoc">Проверяет размер полезной нагрузки на превышение безопасного лимита.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:53</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a986ac9ecac9ce5e1856cef76265e2da8"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a986ac9ecac9ce5e1856cef76265e2da8">tunnel::IcmpUtils::CRYPTO_KEY</a></div><div class="ttdeci">static const std::string CRYPTO_KEY</div><div class="ttdoc">Секретный ключ для XOR-шифрования полезной нагрузки.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.hpp:54</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_a9b7d9ce3546bcc3e88267c2a82578a9b"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#a9b7d9ce3546bcc3e88267c2a82578a9b">tunnel::IcmpUtils::read_from_file</a></div><div class="ttdeci">static std::string read_from_file(const std::string &amp;filepath)</div><div class="ttdoc">Читает содержимое файла по заданному пути (используется для передачи больших команд клиентом).</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:96</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_ac00cd148fd142f7aa5c1b653655901a5"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#ac00cd148fd142f7aa5c1b653655901a5">tunnel::IcmpUtils::execute_command</a></div><div class="ttdeci">static std::string execute_command(const std::string &amp;command)</div><div class="ttdoc">Выполняет shell-команду в операционной системе и перехватывает её стандартный вывод (stdout).</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:82</div></div>
+<div class="ttc" id="aclasstunnel_1_1IcmpUtils_html_afea9c101e3617065d96ba9c8869446f9"><div class="ttname"><a href="classtunnel_1_1IcmpUtils.html#afea9c101e3617065d96ba9c8869446f9">tunnel::IcmpUtils::wrap_payload</a></div><div class="ttdeci">static std::vector&lt; uint8_t &gt; wrap_payload(const std::string &amp;payload, const std::string &amp;magic)</div><div class="ttdoc">Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур...</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:45</div></div>
+<div class="ttc" id="aclasstunnel_1_1NetworkException_html_ab00de927b586b7e4a92282f4d58d0438"><div class="ttname"><a href="classtunnel_1_1NetworkException.html#ab00de927b586b7e4a92282f4d58d0438">tunnel::NetworkException::NetworkException</a></div><div class="ttdeci">NetworkException(const std::string &amp;message)</div><div class="ttdoc">Конструктор сетевого исключения.</div><div class="ttdef"><b>Определения</b> icmp_tunnel.cpp:11</div></div>
+<div class="ttc" id="anamespacetunnel_html"><div class="ttname"><a href="namespacetunnel.html">tunnel</a></div><div class="ttdef"><b>Определения</b> icmp_tunnel.hpp:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="icmp__tunnel_8hpp.html">icmp_tunnel.hpp</a></li>
+    <li class="footer">Документация по ICMP Tunnelling. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
