@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,180,55,207"/>
+<area shape="rect" id="Node000002" href="$classtunnel_1_1IcmpUtils.html#a40b32242af6c4ca4a932f5e34f2054fa" title="Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071)." alt="" coords="107,5,248,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,179,56,122,76,88,101,58,107,55,104,59,105,62,80,91,61,124,38,180"/>
+<area shape="rect" id="Node000003" href="$classtunnel_1_1IcmpUtils.html#a7146c90018518d7408fb00c924a836a0" title="Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст." alt="" coords="113,72,242,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="41,178,68,152,101,124,111,120,108,125,104,129,71,155,46,181"/>
+<area shape="rect" id="Node000005" href="$classtunnel_1_1IcmpUtils.html#a5412a189593194b9576fd0c142a80c7a" title="Проверяет строку на соответствие формату IPv4&#45;адреса." alt="" coords="113,139,242,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="54,186,100,176,96,180,57,190"/>
+<area shape="rect" id="Node000006" href="$classtunnel_1_1IcmpUtils.html#a9b7d9ce3546bcc3e88267c2a82578a9b" title="Читает содержимое файла по заданному пути (используется для передачи больших команд клиентом)." alt="" coords="113,205,242,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="54,196,100,207,96,210,56,201"/>
+<area shape="rect" id="Node000007" href="$classtunnel_1_1IcmpUtils.html#a8b3bcf908b523aa0c527f84ed89b0596" title="Проверяет размер полезной нагрузки на превышение безопасного лимита." alt="" coords="103,272,252,315"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="43,204,71,231,104,258,112,264,107,265,101,262,68,235,44,210"/>
+<area shape="rect" id="Node000008" href="$classtunnel_1_1IcmpUtils.html#afea9c101e3617065d96ba9c8869446f9" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="113,339,242,381"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="36,205,61,263,80,296,105,325,108,330,103,329,101,329,76,299,56,265,35,210"/>
+<area shape="rect" id="Node000004" href="$classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="300,205,428,248"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,113,253,124,297,158,335,195,330,195,294,162,251,129,232,118"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="231,336,251,324,294,291,330,260,335,258,297,295,253,329,233,341"/>
+</map>

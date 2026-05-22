@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICMP Tunnelling: Класс tunnel::IcmpUtils</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICMP Tunnelling<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверное приложение для скрытой передачи команд посредством ICMP пакетов</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classtunnel_1_1IcmpUtils.html','','classtunnel_1_1IcmpUtils-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс tunnel::IcmpUtils</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Статический класс-утилита для работы с сырыми ICMP пакетами и системными вызовами.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="icmp__tunnel_8hpp_source.html">icmp_tunnel.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a40b32242af6c4ca4a932f5e34f2054fa" id="r_a40b32242af6c4ca4a932f5e34f2054fa"><td class="memItemLeft">static uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a40b32242af6c4ca4a932f5e34f2054fa">calculate_checksum</a> (const std::vector&lt; uint8_t &gt; &amp;data)</td></tr>
+<tr class="memdesc:a40b32242af6c4ca4a932f5e34f2054fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071).  <br /></td></tr>
+<tr class="memitem:a808bf157986426c5a30e613adfe46c5c" id="r_a808bf157986426c5a30e613adfe46c5c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a808bf157986426c5a30e613adfe46c5c">xor_cipher</a> (std::vector&lt; uint8_t &gt; &amp;data, const std::string &amp;key)</td></tr>
+<tr class="memdesc:a808bf157986426c5a30e613adfe46c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применяет симметричное потоковое шифрование (XOR) к данным.  <br /></td></tr>
+<tr class="memitem:afea9c101e3617065d96ba9c8869446f9" id="r_afea9c101e3617065d96ba9c8869446f9"><td class="memItemLeft">static std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afea9c101e3617065d96ba9c8869446f9">wrap_payload</a> (const std::string &amp;payload, const std::string &amp;magic)</td></tr>
+<tr class="memdesc:afea9c101e3617065d96ba9c8869446f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатуры.  <br /></td></tr>
+<tr class="memitem:a8b3bcf908b523aa0c527f84ed89b0596" id="r_a8b3bcf908b523aa0c527f84ed89b0596"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a8b3bcf908b523aa0c527f84ed89b0596">validate_payload_size</a> (size_t size)</td></tr>
+<tr class="memdesc:a8b3bcf908b523aa0c527f84ed89b0596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет размер полезной нагрузки на превышение безопасного лимита.  <br /></td></tr>
+<tr class="memitem:a7146c90018518d7408fb00c924a836a0" id="r_a7146c90018518d7408fb00c924a836a0"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a7146c90018518d7408fb00c924a836a0">extract_payload</a> (const std::vector&lt; uint8_t &gt; &amp;raw_data, const std::string &amp;magic)</td></tr>
+<tr class="memdesc:a7146c90018518d7408fb00c924a836a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст.  <br /></td></tr>
+<tr class="memitem:a5412a189593194b9576fd0c142a80c7a" id="r_a5412a189593194b9576fd0c142a80c7a"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a5412a189593194b9576fd0c142a80c7a">is_valid_ipv4</a> (const std::string &amp;ip)</td></tr>
+<tr class="memdesc:a5412a189593194b9576fd0c142a80c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет строку на соответствие формату IPv4-адреса.  <br /></td></tr>
+<tr class="memitem:ac00cd148fd142f7aa5c1b653655901a5" id="r_ac00cd148fd142f7aa5c1b653655901a5"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac00cd148fd142f7aa5c1b653655901a5">execute_command</a> (const std::string &amp;command)</td></tr>
+<tr class="memdesc:ac00cd148fd142f7aa5c1b653655901a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет shell-команду в операционной системе и перехватывает её стандартный вывод (stdout).  <br /></td></tr>
+<tr class="memitem:a9b7d9ce3546bcc3e88267c2a82578a9b" id="r_a9b7d9ce3546bcc3e88267c2a82578a9b"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a9b7d9ce3546bcc3e88267c2a82578a9b">read_from_file</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:a9b7d9ce3546bcc3e88267c2a82578a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает содержимое файла по заданному пути (используется для передачи больших команд клиентом).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a86334c0c7c923e4282405cf2404d001f" id="r_a86334c0c7c923e4282405cf2404d001f"><td class="memItemLeft">static const std::string&#160;</td><td class="memItemRight"><a class="el" href="#a86334c0c7c923e4282405cf2404d001f">MAGIC_REQ</a> = &quot;TNRQ&quot;</td></tr>
+<tr class="memdesc:a86334c0c7c923e4282405cf2404d001f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Магическая сигнатура для идентификации пакета-запроса (от клиента к серверу). Значение по умолчанию: "TNRQ" (Tunnel Request).  <br /></td></tr>
+<tr class="memitem:a3b6872492d214089214276d221a5958c" id="r_a3b6872492d214089214276d221a5958c"><td class="memItemLeft">static const std::string&#160;</td><td class="memItemRight"><a class="el" href="#a3b6872492d214089214276d221a5958c">MAGIC_RES</a> = &quot;TNRS&quot;</td></tr>
+<tr class="memdesc:a3b6872492d214089214276d221a5958c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Магическая сигнатура для идентификации пакета-ответа (от сервера к клиенту). Значение по умолчанию: "TNRS" (Tunnel Response). Позволяет клиенту игнорировать автоматические ответы от ядра ОС.  <br /></td></tr>
+<tr class="memitem:a986ac9ecac9ce5e1856cef76265e2da8" id="r_a986ac9ecac9ce5e1856cef76265e2da8"><td class="memItemLeft">static const std::string&#160;</td><td class="memItemRight"><a class="el" href="#a986ac9ecac9ce5e1856cef76265e2da8">CRYPTO_KEY</a> = &quot;Xor-secret-key&quot;</td></tr>
+<tr class="memdesc:a986ac9ecac9ce5e1856cef76265e2da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Секретный ключ для XOR-шифрования полезной нагрузки.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Статический класс-утилита для работы с сырыми ICMP пакетами и системными вызовами. </p>
+<p>Содержит методы для инкапсуляции данных, проверки целостности (checksum) и взаимодействия с операционной системой. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a40b32242af6c4ca4a932f5e34f2054fa" name="a40b32242af6c4ca4a932f5e34f2054fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b32242af6c4ca4a932f5e34f2054fa">&#9670;&#160;</a></span>calculate_checksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tunnel::IcmpUtils::calculate_checksum </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Вектор байт пакета, для которого производится вычисление. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вычисленная 16-битная контрольная сумма, готовая для вставки в заголовок (icmphdr). </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a40b32242af6c4ca4a932f5e34f2054fa_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a40b32242af6c4ca4a932f5e34f2054fa_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a40b32242af6c4ca4a932f5e34f2054fa_icgraph" id="aclasstunnel_1_1IcmpUtils_a40b32242af6c4ca4a932f5e34f2054fa_icgraph">
+<area shape="rect" title="Вычисляет стандартную контрольную сумму (checksum) для IP/ICMP заголовков (алгоритм RFC 1071)." alt="" coords="103,23,243,65"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="85,30,55,26,55,20,90,27"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="85,60,55,68,54,62,90,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac00cd148fd142f7aa5c1b653655901a5" name="ac00cd148fd142f7aa5c1b653655901a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00cd148fd142f7aa5c1b653655901a5">&#9670;&#160;</a></span>execute_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tunnel::IcmpUtils::execute_command </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>command</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет shell-команду в операционной системе и перехватывает её стандартный вывод (stdout). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Строка с системной командой для выполнения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат выполнения команды в виде строки. Если вывода нет, возвращает информационное сообщение. </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_ac00cd148fd142f7aa5c1b653655901a5_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_ac00cd148fd142f7aa5c1b653655901a5_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_ac00cd148fd142f7aa5c1b653655901a5_icgraph" id="aclasstunnel_1_1IcmpUtils_ac00cd148fd142f7aa5c1b653655901a5_icgraph">
+<area shape="rect" title="Выполняет shell&#45;команду в операционной системе и перехватывает её стандартный вывод (stdout)." alt="" coords="103,5,234,48"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="85,28,55,29,55,24,90,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7146c90018518d7408fb00c924a836a0" name="a7146c90018518d7408fb00c924a836a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7146c90018518d7408fb00c924a836a0">&#9670;&#160;</a></span>extract_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tunnel::IcmpUtils::extract_payload </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>raw_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>magic</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_data</td><td>Сырые данные пакета (секция данных после ICMP заголовка). </td></tr>
+    <tr><td class="paramname">magic</td><td>Ожидаемая магическая сигнатура, по которой определяется "свой" пакет. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Извлеченная строка (полезная нагрузка). Если сигнатура не совпадает или пакет слишком мал, возвращается пустая строка. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_cgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_cgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_cgraph" id="aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_cgraph">
+<area shape="rect" title="Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст." alt="" coords="5,5,134,48"/>
+<area shape="rect" href="classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="182,5,310,48"/>
+<area shape="poly" title=" " alt="" coords="134,24,169,26,163,27,134,29"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_icgraph" id="aclasstunnel_1_1IcmpUtils_a7146c90018518d7408fb00c924a836a0_icgraph">
+<area shape="rect" title="Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст." alt="" coords="103,23,231,65"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="85,31,55,26,55,20,90,28"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="85,60,56,67,54,62,90,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5412a189593194b9576fd0c142a80c7a" name="a5412a189593194b9576fd0c142a80c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5412a189593194b9576fd0c142a80c7a">&#9670;&#160;</a></span>is_valid_ipv4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tunnel::IcmpUtils::is_valid_ipv4 </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>ip</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет строку на соответствие формату IPv4-адреса. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>Строка, содержащая предполагаемый IP-адрес. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если адрес валиден, иначе false. </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a5412a189593194b9576fd0c142a80c7a_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a5412a189593194b9576fd0c142a80c7a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a5412a189593194b9576fd0c142a80c7a_icgraph" id="aclasstunnel_1_1IcmpUtils_a5412a189593194b9576fd0c142a80c7a_icgraph">
+<area shape="rect" title="Проверяет строку на соответствие формату IPv4&#45;адреса." alt="" coords="103,5,231,48"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="85,28,55,29,55,24,90,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b7d9ce3546bcc3e88267c2a82578a9b" name="a9b7d9ce3546bcc3e88267c2a82578a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7d9ce3546bcc3e88267c2a82578a9b">&#9670;&#160;</a></span>read_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tunnel::IcmpUtils::read_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Читает содержимое файла по заданному пути (используется для передачи больших команд клиентом). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Абсолютный или относительный путь к файлу. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Прочитанная строка, содержащая все данные из файла. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classtunnel_1_1NetworkException.html" title="Класс исключения, выбрасываемого при критических ошибках работы с сетью или файлами.">tunnel::NetworkException</a></td><td>В случае, если файл не существует или недоступен для чтения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a9b7d9ce3546bcc3e88267c2a82578a9b_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a9b7d9ce3546bcc3e88267c2a82578a9b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a9b7d9ce3546bcc3e88267c2a82578a9b_icgraph" id="aclasstunnel_1_1IcmpUtils_a9b7d9ce3546bcc3e88267c2a82578a9b_icgraph">
+<area shape="rect" title="Читает содержимое файла по заданному пути (используется для передачи больших команд клиентом)." alt="" coords="103,5,231,48"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="85,28,55,29,55,24,90,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b3bcf908b523aa0c527f84ed89b0596" name="a8b3bcf908b523aa0c527f84ed89b0596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3bcf908b523aa0c527f84ed89b0596">&#9670;&#160;</a></span>validate_payload_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tunnel::IcmpUtils::validate_payload_size </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет размер полезной нагрузки на превышение безопасного лимита. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Текущий размер данных в байтах. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a8b3bcf908b523aa0c527f84ed89b0596_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a8b3bcf908b523aa0c527f84ed89b0596_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a8b3bcf908b523aa0c527f84ed89b0596_icgraph" id="aclasstunnel_1_1IcmpUtils_a8b3bcf908b523aa0c527f84ed89b0596_icgraph">
+<area shape="rect" title="Проверяет размер полезной нагрузки на превышение безопасного лимита." alt="" coords="103,23,252,65"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="85,30,55,25,54,20,90,27"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="85,61,55,68,54,63,90,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afea9c101e3617065d96ba9c8869446f9" name="afea9c101e3617065d96ba9c8869446f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea9c101e3617065d96ba9c8869446f9">&#9670;&#160;</a></span>wrap_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; uint8_t &gt; tunnel::IcmpUtils::wrap_payload </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>payload</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>magic</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>Данные, которые необходимо спрятать в ICMP пакете. </td></tr>
+    <tr><td class="paramname">magic</td><td>Магическая сигнатура (TNRQ или TNRS), которая будет помещена в начало полезной нагрузки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор байт, готовый для копирования в секцию данных ICMP пакета. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_cgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_cgraph" id="aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_cgraph">
+<area shape="rect" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="5,5,134,48"/>
+<area shape="rect" href="classtunnel_1_1IcmpUtils.html#a808bf157986426c5a30e613adfe46c5c" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="182,5,310,48"/>
+<area shape="poly" title=" " alt="" coords="134,24,169,26,163,27,134,29"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_icgraph" id="aclasstunnel_1_1IcmpUtils_afea9c101e3617065d96ba9c8869446f9_icgraph">
+<area shape="rect" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="103,23,231,65"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="85,31,55,26,55,20,90,28"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="85,60,56,67,54,62,90,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a808bf157986426c5a30e613adfe46c5c" name="a808bf157986426c5a30e613adfe46c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808bf157986426c5a30e613adfe46c5c">&#9670;&#160;</a></span>xor_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tunnel::IcmpUtils::xor_cipher </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Применяет симметричное потоковое шифрование (XOR) к данным. </p>
+<p>Функция изменяет переданный вектор на месте. Так как операция XOR обратима, повторный вызов этой функции с тем же ключом восстановит исходные данные.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Вектор байт для шифрования/расшифровки. </td></tr>
+    <tr><td class="paramname">key</td><td>Строка-ключ, которая будет циклически применяться к данным. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtunnel_1_1IcmpUtils_a808bf157986426c5a30e613adfe46c5c_icgraph.png" border="0" usemap="#aclasstunnel_1_1IcmpUtils_a808bf157986426c5a30e613adfe46c5c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclasstunnel_1_1IcmpUtils_a808bf157986426c5a30e613adfe46c5c_icgraph" id="aclasstunnel_1_1IcmpUtils_a808bf157986426c5a30e613adfe46c5c_icgraph">
+<area shape="rect" title="Применяет симметричное потоковое шифрование (XOR) к данным." alt="" coords="279,39,407,81"/>
+<area shape="rect" href="classtunnel_1_1IcmpUtils.html#a7146c90018518d7408fb00c924a836a0" title="Проверяет наличие нужной магической сигнатуры в сырых данных и извлекает скрытый текст." alt="" coords="103,5,231,48"/>
+<area shape="poly" title=" " alt="" coords="261,45,232,42,232,36,266,45"/>
+<area shape="rect" href="classtunnel_1_1IcmpUtils.html#afea9c101e3617065d96ba9c8869446f9" title="Оборачивает полезную нагрузку (команду или результат) в массив байт с добавлением магической сигнатур..." alt="" coords="103,72,231,115"/>
+<area shape="poly" title=" " alt="" coords="266,75,232,84,231,79,261,75"/>
+<area shape="rect" href="server__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,17,55,44"/>
+<area shape="poly" title=" " alt="" coords="85,31,56,32,54,27,89,27"/>
+<area shape="rect" href="client__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,72,55,99"/>
+<area shape="poly" title=" " alt="" coords="100,57,56,77,54,73,103,52"/>
+<area shape="poly" title=" " alt="" coords="102,66,55,44,55,39,107,63"/>
+<area shape="poly" title=" " alt="" coords="85,90,55,89,55,84,90,87"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a986ac9ecac9ce5e1856cef76265e2da8" name="a986ac9ecac9ce5e1856cef76265e2da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986ac9ecac9ce5e1856cef76265e2da8">&#9670;&#160;</a></span>CRYPTO_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string tunnel::IcmpUtils::CRYPTO_KEY = &quot;Xor-secret-key&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Секретный ключ для XOR-шифрования полезной нагрузки. </p>
+
+</div>
+</div>
+<a id="a86334c0c7c923e4282405cf2404d001f" name="a86334c0c7c923e4282405cf2404d001f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86334c0c7c923e4282405cf2404d001f">&#9670;&#160;</a></span>MAGIC_REQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string tunnel::IcmpUtils::MAGIC_REQ = &quot;TNRQ&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Магическая сигнатура для идентификации пакета-запроса (от клиента к серверу). Значение по умолчанию: "TNRQ" (Tunnel Request). </p>
+
+</div>
+</div>
+<a id="a3b6872492d214089214276d221a5958c" name="a3b6872492d214089214276d221a5958c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6872492d214089214276d221a5958c">&#9670;&#160;</a></span>MAGIC_RES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string tunnel::IcmpUtils::MAGIC_RES = &quot;TNRS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Магическая сигнатура для идентификации пакета-ответа (от сервера к клиенту). Значение по умолчанию: "TNRS" (Tunnel Response). Позволяет клиенту игнорировать автоматические ответы от ядра ОС. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/user/icmp_tunneling/include/<a class="el" href="icmp__tunnel_8hpp_source.html">icmp_tunnel.hpp</a></li>
+<li>/home/user/icmp_tunneling/src/<a class="el" href="icmp__tunnel_8cpp.html">icmp_tunnel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacetunnel.html">tunnel</a></li><li class="navelem"><a href="classtunnel_1_1IcmpUtils.html">IcmpUtils</a></li>
+    <li class="footer">Документация по ICMP Tunnelling. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
